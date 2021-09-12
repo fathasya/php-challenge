@@ -12,14 +12,14 @@
 
     <?php
     echo $_POST['nama'];
-	echo "<br>";
-	echo $_POST['nim'];
-	echo "<br>";
-	echo $_POST['prodi'];
-	echo "<br>";
-	echo $_POST['alamat'];
-	echo "<br>";
-	?>
+    echo "<br>";
+    echo $_POST['nim'];
+    echo "<br>";
+    echo $_POST['prodi'];
+    echo "<br>";
+    echo $_POST['alamat'];
+    echo "<br>";
+    ?>
 
     <?php
     $target_dir = "pictUploaded/";
@@ -78,7 +78,8 @@
         <?php
         $file_upload =  htmlspecialchars(basename($_FILES["fileToUpload"]["name"]));
         ?>
-        <img src="uploads/<?= $file_upload; ?>" alt="">
+        <img src="pictUploaded/<?= $file_upload; ?>" alt="">
     </div>
 </body>
+
 </html>
